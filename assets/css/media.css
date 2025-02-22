@@ -1,0 +1,900 @@
+@media screen and (max-width: 400px) {
+    body{
+        font-size: 10px;
+        height: 100vh;
+        margin: 1em;
+    }
+    
+    
+    img{
+        width: 200px;
+       
+    }
+    
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    
+    #sobreMi, #educacion, #tecnologias, #contacto{
+        margin: 5em 2em 1em 2em;
+        padding: 2em;
+        border: 2px solid #EAEAEA;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -webkit-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -moz-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+    }
+
+
+
+
+    
+    
+    
+    /*----------------------------------*/
+    .project-card {  
+        position: relative;  
+        width: 300px; /* Ancho de la carta */  
+        height: 150px; /* Altura de la carta */  
+        overflow: hidden; /* Oculta el desbordamiento */  
+        margin: 20px; /* Espaciado de la carta */  
+        background-color: #fff; /* Fondo blanco */  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+        transition: transform 0.3s ease; /* Transición al hacer hover */  
+      }  
+      
+      /* Efecto de escalado al hacer hover */  
+      .project-card:hover {  
+        transform: scale(1.05); /* Escala la carta un poco */  
+      }  
+      
+      /* Estilo para la capa de sobreposición */  
+      .overlay {  
+        position: absolute; /* Posición absoluta para la capa */  
+        top: 0; /* Alineado en la parte superior */  
+        left: 0; /* Alineado a la izquierda */  
+        width: 100%; /* Ancho completo de la carta */  
+        height: 100%; /* Altura completa de la carta */  
+        background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */  
+        color: #fff; /* Texto blanco */  
+        display: flex; /* Usamos flexbox para centrar el contenido */  
+        align-items: center; /* Alineación vertical centrada */  
+        justify-content: center; /* Alineación horizontal centrada */  
+        opacity: 0; /* Inicialmente oculto */  
+        transition: opacity 0.3s ease; /* Transición de opacidad */  
+    
+        display: flex;
+        flex-direction: column;
+        /*padding: 2em;*/
+      }  
+      
+      /* Muestra la capa al hacer hover */  
+      .project-card:hover .overlay {  
+        opacity: 1; /* Opacidad al hacer hover */  
+      }  
+      
+      /* Estilo para el título del proyecto */  
+      .project-title{  
+        font-size: 10px; /* Tamaño de la fuente */  
+        font-weight: bold; /* Peso de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }  
+    
+      .project-descript{
+        font-size: 5px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }
+    
+      .project-links{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+    
+      .proyect-tech{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+      
+      /* Efecto de desplazamiento del título al hacer hover */  
+      .project-card:hover .project-title .project-links .project-descript .proyect-tech{  
+        transform: translateY(0); /* Restaura a la posición original */  
+      }
+    
+    
+     .contenedor-proyectos{
+        display: flex;
+    
+     }
+    
+     /*---------------------------------------*/
+    
+    
+     .edu-card{
+        border-bottom: 1px solid gray;
+        margin-top: 1em;
+     }
+    
+    /*------------------*/
+    
+    .tecnologias-contenedor img{
+        width: 50px;
+      
+    }
+    
+    
+    
+    .issues{
+        margin: 1em 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    form button{
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    body{
+        font-size: 12px;
+        height: 100vh;
+        margin: 1.5em;
+    }
+    
+    
+    img{
+        width: 250px;
+       
+    }
+    
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    
+    #sobreMi, #proyectos, #educacion, #tecnologias, #contacto{
+        margin: 5em 2em 1em 2em;
+        padding: 2em;
+        border: 2px solid #EAEAEA;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -webkit-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -moz-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+    }
+    
+    
+    
+    /*----------------------------------*/
+    .project-card {  
+        position: relative;  
+        width: 300px; /* Ancho de la carta */  
+        height: 170px; /* Altura de la carta */  
+        overflow: hidden; /* Oculta el desbordamiento */  
+        margin: 20px; /* Espaciado de la carta */  
+        background-color: #fff; /* Fondo blanco */  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+        transition: transform 0.3s ease; /* Transición al hacer hover */  
+      }  
+      
+      /* Efecto de escalado al hacer hover */  
+      .project-card:hover {  
+        transform: scale(1.05); /* Escala la carta un poco */  
+      }  
+      
+      /* Estilo para la capa de sobreposición */  
+      .overlay {  
+        position: absolute; /* Posición absoluta para la capa */  
+        top: 0; /* Alineado en la parte superior */  
+        left: 0; /* Alineado a la izquierda */  
+        width: 100%; /* Ancho completo de la carta */  
+        height: 100%; /* Altura completa de la carta */  
+        background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */  
+        color: #fff; /* Texto blanco */  
+        display: flex; /* Usamos flexbox para centrar el contenido */  
+        align-items: center; /* Alineación vertical centrada */  
+        justify-content: center; /* Alineación horizontal centrada */  
+        opacity: 0; /* Inicialmente oculto */  
+        transition: opacity 0.3s ease; /* Transición de opacidad */  
+    
+        display: flex;
+        flex-direction: column;
+        /*padding: 2em;*/
+      }  
+      
+      /* Muestra la capa al hacer hover */  
+      .project-card:hover .overlay {  
+        opacity: 1; /* Opacidad al hacer hover */  
+      }  
+      
+      /* Estilo para el título del proyecto */  
+      .project-title{  
+        font-size: 11px; /* Tamaño de la fuente */  
+        font-weight: bold; /* Peso de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }  
+    
+      .project-descript{
+        font-size: 6px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }
+    
+      .project-links{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+    
+      .proyect-tech{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+      
+      /* Efecto de desplazamiento del título al hacer hover */  
+      .project-card:hover .project-title .project-links .project-descript .proyect-tech{  
+        transform: translateY(0); /* Restaura a la posición original */  
+      }
+    
+    
+     .contenedor-proyectos{
+        display: flex;
+    
+     }
+    
+     /*---------------------------------------*/
+    
+    
+     .edu-card{
+        border-bottom: 1px solid gray;
+        margin-top: 1em;
+     }
+    
+    /*------------------*/
+    
+    .tecnologias-contenedor img{
+        width: 70px;
+      
+    }
+    
+    
+    
+    .issues{
+        margin: 1em 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    form button{
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    body{
+        font-size: 20px;
+        height: 100vh;
+        margin: 2.5em;
+    }
+    
+    
+    img{
+        width: 300px;
+       
+    }
+    
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    
+    #sobreMi, #proyectos, #educacion, #tecnologias, #contacto{
+        margin: 5em 2em 1em 2em;
+        padding: 2em;
+        border: 2px solid #EAEAEA;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -webkit-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -moz-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+    }
+    
+    
+    
+    /*----------------------------------*/
+    .project-card {  
+        position: relative;  
+        width: 300px; /* Ancho de la carta */  
+        height: 200px; /* Altura de la carta */  
+        overflow: hidden; /* Oculta el desbordamiento */  
+        margin: 20px; /* Espaciado de la carta */  
+        background-color: #fff; /* Fondo blanco */  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+        transition: transform 0.3s ease; /* Transición al hacer hover */  
+      }  
+      
+      /* Efecto de escalado al hacer hover */  
+      .project-card:hover {  
+        transform: scale(1.05); /* Escala la carta un poco */  
+      }  
+      
+      /* Estilo para la capa de sobreposición */  
+      .overlay {  
+        position: absolute; /* Posición absoluta para la capa */  
+        top: 0; /* Alineado en la parte superior */  
+        left: 0; /* Alineado a la izquierda */  
+        width: 100%; /* Ancho completo de la carta */  
+        height: 100%; /* Altura completa de la carta */  
+        background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */  
+        color: #fff; /* Texto blanco */  
+        display: flex; /* Usamos flexbox para centrar el contenido */  
+        align-items: center; /* Alineación vertical centrada */  
+        justify-content: center; /* Alineación horizontal centrada */  
+        opacity: 0; /* Inicialmente oculto */  
+        transition: opacity 0.3s ease; /* Transición de opacidad */  
+    
+        display: flex;
+        flex-direction: column;
+        /*padding: 2em;*/
+      }  
+      
+      /* Muestra la capa al hacer hover */  
+      .project-card:hover .overlay {  
+        opacity: 1; /* Opacidad al hacer hover */  
+      }  
+      
+      /* Estilo para el título del proyecto */  
+      .project-title{  
+        font-size: 20px; /* Tamaño de la fuente */  
+        font-weight: bold; /* Peso de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }  
+    
+      .project-descript{
+        font-size: 10px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }
+    
+      .project-links{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+    
+      .proyect-tech{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+      
+      /* Efecto de desplazamiento del título al hacer hover */  
+      .project-card:hover .project-title .project-links .project-descript .proyect-tech{  
+        transform: translateY(0); /* Restaura a la posición original */  
+      }
+    
+    
+     .contenedor-proyectos{
+        display: flex;
+    
+     }
+    
+     /*---------------------------------------*/
+    
+    
+     .edu-card{
+        border-bottom: 1px solid gray;
+        margin-top: 1em;
+     }
+    
+    /*------------------*/
+    
+    .tecnologias-contenedor img{
+        width: 75px;
+      
+    }
+    
+    
+    
+    .issues{
+        margin: 1em 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    form button{
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    body{
+        font-size: 20px;
+        height: 100vh;
+    }
+    
+    
+    img{
+        width: 300px;
+       
+    }
+    
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    
+    #sobreMi, #proyectos, #educacion, #tecnologias, #contacto{
+        margin: 5em 2em 1em 2em;
+        padding: 2em;
+        border: 2px solid #EAEAEA;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -webkit-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -moz-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+    }
+    
+    
+    
+    /*----------------------------------*/
+    .project-card {  
+        position: relative;  
+        width: 300px; /* Ancho de la carta */  
+        height: 200px; /* Altura de la carta */  
+        overflow: hidden; /* Oculta el desbordamiento */  
+        margin: 20px; /* Espaciado de la carta */  
+        background-color: #fff; /* Fondo blanco */  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+        transition: transform 0.3s ease; /* Transición al hacer hover */  
+      }  
+      
+      /* Efecto de escalado al hacer hover */  
+      .project-card:hover {  
+        transform: scale(1.05); /* Escala la carta un poco */  
+      }  
+      
+      /* Estilo para la capa de sobreposición */  
+      .overlay {  
+        position: absolute; /* Posición absoluta para la capa */  
+        top: 0; /* Alineado en la parte superior */  
+        left: 0; /* Alineado a la izquierda */  
+        width: 100%; /* Ancho completo de la carta */  
+        height: 100%; /* Altura completa de la carta */  
+        background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */  
+        color: #fff; /* Texto blanco */  
+        display: flex; /* Usamos flexbox para centrar el contenido */  
+        align-items: center; /* Alineación vertical centrada */  
+        justify-content: center; /* Alineación horizontal centrada */  
+        opacity: 0; /* Inicialmente oculto */  
+        transition: opacity 0.3s ease; /* Transición de opacidad */  
+    
+        display: flex;
+        flex-direction: column;
+        /*padding: 2em;*/
+      }  
+      
+      /* Muestra la capa al hacer hover */  
+      .project-card:hover .overlay {  
+        opacity: 1; /* Opacidad al hacer hover */  
+      }  
+      
+      /* Estilo para el título del proyecto */  
+      .project-title{  
+        font-size: 24px; /* Tamaño de la fuente */  
+        font-weight: bold; /* Peso de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }  
+    
+      .project-descript{
+        font-size: 13px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }
+    
+      .project-links{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+    
+      .proyect-tech{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+      
+      /* Efecto de desplazamiento del título al hacer hover */  
+      .project-card:hover .project-title .project-links .project-descript .proyect-tech{  
+        transform: translateY(0); /* Restaura a la posición original */  
+      }
+    
+    
+     .contenedor-proyectos{
+        display: flex;
+    
+     }
+    
+     /*---------------------------------------*/
+    
+    
+     .edu-card{
+        border-bottom: 1px solid gray;
+        margin-top: 1em;
+     }
+    
+    /*------------------*/
+    
+    .tecnologias-contenedor img{
+        width: 100px;
+      
+    }
+    
+    
+    
+    .issues{
+        margin: 1em 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    form button{
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    body{
+        font-size: 20px;
+        height: 100vh;
+    }
+    
+    
+    img{
+        width: 300px;
+       
+    }
+    
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    
+    #sobreMi, #proyectos, #educacion, #tecnologias, #contacto{
+        margin: 5em 2em 1em 2em;
+        padding: 2em;
+        border: 2px solid #EAEAEA;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -webkit-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -moz-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+    }
+    
+    
+    
+    /*----------------------------------*/
+    .project-card {  
+        position: relative;  
+        width: 300px; /* Ancho de la carta */  
+        height: 200px; /* Altura de la carta */  
+        overflow: hidden; /* Oculta el desbordamiento */  
+        margin: 20px; /* Espaciado de la carta */  
+        background-color: #fff; /* Fondo blanco */  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+        transition: transform 0.3s ease; /* Transición al hacer hover */  
+      }  
+      
+      /* Efecto de escalado al hacer hover */  
+      .project-card:hover {  
+        transform: scale(1.05); /* Escala la carta un poco */  
+      }  
+      
+      /* Estilo para la capa de sobreposición */  
+      .overlay {  
+        position: absolute; /* Posición absoluta para la capa */  
+        top: 0; /* Alineado en la parte superior */  
+        left: 0; /* Alineado a la izquierda */  
+        width: 100%; /* Ancho completo de la carta */  
+        height: 100%; /* Altura completa de la carta */  
+        background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */  
+        color: #fff; /* Texto blanco */  
+        display: flex; /* Usamos flexbox para centrar el contenido */  
+        align-items: center; /* Alineación vertical centrada */  
+        justify-content: center; /* Alineación horizontal centrada */  
+        opacity: 0; /* Inicialmente oculto */  
+        transition: opacity 0.3s ease; /* Transición de opacidad */  
+    
+        display: flex;
+        flex-direction: column;
+        /*padding: 2em;*/
+      }  
+      
+      /* Muestra la capa al hacer hover */  
+      .project-card:hover .overlay {  
+        opacity: 1; /* Opacidad al hacer hover */  
+      }  
+      
+      /* Estilo para el título del proyecto */  
+      .project-title{  
+        font-size: 24px; /* Tamaño de la fuente */  
+        font-weight: bold; /* Peso de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }  
+    
+      .project-descript{
+        font-size: 13px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }
+    
+      .project-links{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+    
+      .proyect-tech{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+      
+      /* Efecto de desplazamiento del título al hacer hover */  
+      .project-card:hover .project-title .project-links .project-descript .proyect-tech{  
+        transform: translateY(0); /* Restaura a la posición original */  
+      }
+    
+    
+     .contenedor-proyectos{
+        display: flex;
+    
+     }
+    
+     /*---------------------------------------*/
+    
+    
+     .edu-card{
+        border-bottom: 1px solid gray;
+        margin-top: 1em;
+     }
+    
+    /*------------------*/
+    
+    .tecnologias-contenedor img{
+        width: 100px;
+      
+    }
+    
+    
+    
+    .issues{
+        margin: 1em 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    form button{
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    body{
+        font-size: 20px;
+        height: 100vh;
+    }
+    
+    
+    img{
+        width: 300px;
+       
+    }
+    
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    
+    #sobreMi, #proyectos, #educacion, #tecnologias, #contacto{
+        margin: 5em 2em 1em 2em;
+        padding: 2em;
+        border: 2px solid #EAEAEA;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -webkit-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+        -moz-box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.8);
+    }
+    
+    
+    
+    /*----------------------------------*/
+    .project-card {  
+        position: relative;  
+        width: 300px; /* Ancho de la carta */  
+        height: 200px; /* Altura de la carta */  
+        overflow: hidden; /* Oculta el desbordamiento */  
+        margin: 20px; /* Espaciado de la carta */  
+        background-color: #fff; /* Fondo blanco */  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+        transition: transform 0.3s ease; /* Transición al hacer hover */  
+      }  
+      
+      /* Efecto de escalado al hacer hover */  
+      .project-card:hover {  
+        transform: scale(1.05); /* Escala la carta un poco */  
+      }  
+      
+      /* Estilo para la capa de sobreposición */  
+      .overlay {  
+        position: absolute; /* Posición absoluta para la capa */  
+        top: 0; /* Alineado en la parte superior */  
+        left: 0; /* Alineado a la izquierda */  
+        width: 100%; /* Ancho completo de la carta */  
+        height: 100%; /* Altura completa de la carta */  
+        background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */  
+        color: #fff; /* Texto blanco */  
+        display: flex; /* Usamos flexbox para centrar el contenido */  
+        align-items: center; /* Alineación vertical centrada */  
+        justify-content: center; /* Alineación horizontal centrada */  
+        opacity: 0; /* Inicialmente oculto */  
+        transition: opacity 0.3s ease; /* Transición de opacidad */  
+    
+        display: flex;
+        flex-direction: column;
+        /*padding: 2em;*/
+      }  
+      
+      /* Muestra la capa al hacer hover */  
+      .project-card:hover .overlay {  
+        opacity: 1; /* Opacidad al hacer hover */  
+      }  
+      
+      /* Estilo para el título del proyecto */  
+      .project-title{  
+        font-size: 24px; /* Tamaño de la fuente */  
+        font-weight: bold; /* Peso de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }  
+    
+      .project-descript{
+        font-size: 13px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */  
+      }
+    
+      .project-links{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+    
+      .proyect-tech{
+        font-size: 20px; /* Tamaño de la fuente */  
+        text-align: center; /* Alineación central */  
+        transform: translateY(20px); /* Desplazamiento vertical inicial */  
+        transition: transform 0.3s ease; /* Transición del desplazamiento */ 
+      }
+      
+      /* Efecto de desplazamiento del título al hacer hover */  
+      .project-card:hover .project-title .project-links .project-descript .proyect-tech{  
+        transform: translateY(0); /* Restaura a la posición original */  
+      }
+    
+    
+     .contenedor-proyectos{
+        display: flex;
+    
+     }
+    
+     /*---------------------------------------*/
+    
+    
+     .edu-card{
+        border-bottom: 1px solid gray;
+        margin-top: 1em;
+     }
+    
+    /*------------------*/
+    
+    .tecnologias-contenedor img{
+        width: 100px;
+      
+    }
+    
+    
+    
+    .issues{
+        margin: 1em 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    form button{
+        margin-top: 1em;
+    }
+}

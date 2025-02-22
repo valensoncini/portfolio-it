@@ -1,0 +1,55 @@
+
+/* Estilo para la carta del proyecto */  
+.project-card {  
+    position: relative;  
+    width: 300px; /* Ancho de la carta */  
+    height: 200px; /* Altura de la carta */  
+    overflow: hidden; /* Oculta el desbordamiento */  
+    margin: 20px; /* Espaciado de la carta */  
+    background-color: #fff; /* Fondo blanco */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+    transition: transform 0.3s ease; /* Transición al hacer hover */  
+  }  
+  
+  /* Efecto de escalado al hacer hover */  
+  .project-card:hover {  
+    transform: scale(1.05); /* Escala la carta un poco */  
+  }  
+  
+  /* Estilo para la capa de sobreposición */  
+  .overlay {  
+    position: absolute; /* Posición absoluta para la capa */  
+    top: 0; /* Alineado en la parte superior */  
+    left: 0; /* Alineado a la izquierda */  
+    width: 100%; /* Ancho completo de la carta */  
+    height: 100%; /* Altura completa de la carta */  
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */  
+    color: #fff; /* Texto blanco */  
+    display: flex; /* Usamos flexbox para centrar el contenido */  
+    align-items: center; /* Alineación vertical centrada */  
+    justify-content: center; /* Alineación horizontal centrada */  
+    opacity: 0; /* Inicialmente oculto */  
+    transition: opacity 0.3s ease; /* Transición de opacidad */  
+  }  
+  
+  /* Muestra la capa al hacer hover */  
+  .project-card:hover .overlay {  
+    opacity: 1; /* Opacidad al hacer hover */  
+  }  
+  
+  /* Estilo para el título del proyecto */  
+  .project-title {  
+    font-size: 24px; /* Tamaño de la fuente */  
+    font-weight: bold; /* Peso de la fuente */  
+    text-align: center; /* Alineación central */  
+    transform: translateY(20px); /* Desplazamiento vertical inicial */  
+    transition: transform 0.3s ease; /* Transición del desplazamiento */  
+  }  
+  
+  /* Efecto de desplazamiento del título al hacer hover */  
+  .project-card:hover .project-title {  
+    transform: translateY(0); /* Restaura a la posición original */  
+  }
+
+
+
